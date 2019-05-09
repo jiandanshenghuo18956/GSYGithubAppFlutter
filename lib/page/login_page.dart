@@ -27,9 +27,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  var _userName = "";
+  var _userName = "jiandanshenghuo18956";
 
-  var _password = "";
+  var _password = "18956054297jia";
 
   final TextEditingController userController = new TextEditingController();
   final TextEditingController pwController = new TextEditingController();
@@ -45,6 +45,8 @@ class _LoginPageState extends State<LoginPage> {
   initParams() async {
     _userName = await LocalStorage.get(Config.USER_NAME_KEY);
     _password = await LocalStorage.get(Config.PW_KEY);
+     _userName = "jiandanshenghuo18956";
+     _password = "18956054297jia";
     userController.value = new TextEditingValue(text: _userName ?? "");
     pwController.value = new TextEditingValue(text: _password ?? "");
   }
